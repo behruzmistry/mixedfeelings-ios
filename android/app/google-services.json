@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "266071319441",
+    "firebase_url": "https://mixedfeelings-ios-default-rtdb.firebaseio.com",
+    "project_id": "mixedfeelings-ios",
+    "storage_bucket": "mixedfeelings-ios.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:266071319441:android:36379715a86a395948b030",
+        "android_client_info": {
+          "package_name": "com.mixedfeelingscreative.mixedfeelingsios"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "266071319441-5mb0v9jkv32ifm1o32jk6i3bi9fblo88.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mixedfeelingscreative.mixedfeelingsios",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "266071319441-m1l2mdjpspd4e5b8hb7gihg9mst83osg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpFJEwBeXJa3eoaHRib_IE5DkE-Y-v5C0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "266071319441-m1l2mdjpspd4e5b8hb7gihg9mst83osg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "266071319441-6158j28r854np36q3594tsc0pbojaq5l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.mixedfeelingsios"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:266071319441:android:1bec6e41041a228b48b030",
+        "android_client_info": {
+          "package_name": "com.mycompany.mixedfeelingsios"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "266071319441-j9nfif84b8omonv32u7u0ds9bajjd9b2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mycompany.mixedfeelingsios",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "266071319441-m1l2mdjpspd4e5b8hb7gihg9mst83osg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpFJEwBeXJa3eoaHRib_IE5DkE-Y-v5C0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "266071319441-m1l2mdjpspd4e5b8hb7gihg9mst83osg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "266071319441-6158j28r854np36q3594tsc0pbojaq5l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.mixedfeelingsios"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
