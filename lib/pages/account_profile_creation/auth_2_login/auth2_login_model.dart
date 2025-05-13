@@ -1,11 +1,14 @@
+import '/components/mixedfeelingsheader_widget.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/index.dart';
-import 'login_widget.dart' show LoginWidget;
+import 'auth2_login_widget.dart' show Auth2LoginWidget;
 import 'package:flutter/material.dart';
 
-class LoginModel extends FlutterFlowModel<LoginWidget> {
+class Auth2LoginModel extends FlutterFlowModel<Auth2LoginWidget> {
   ///  State fields for stateful widgets in this page.
 
+  // Model for mixedfeelingsheader component.
+  late MixedfeelingsheaderModel mixedfeelingsheaderModel;
   // State field(s) for emailAddress widget.
   FocusNode? emailAddressFocusNode;
   TextEditingController? emailAddressTextController;
@@ -18,11 +21,14 @@ class LoginModel extends FlutterFlowModel<LoginWidget> {
 
   @override
   void initState(BuildContext context) {
+    mixedfeelingsheaderModel =
+        createModel(context, () => MixedfeelingsheaderModel());
     passwordVisibility = false;
   }
 
   @override
   void dispose() {
+    mixedfeelingsheaderModel.dispose();
     emailAddressFocusNode?.dispose();
     emailAddressTextController?.dispose();
 

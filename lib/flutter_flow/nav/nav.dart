@@ -78,13 +78,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       refreshListenable: appStateNotifier,
       navigatorKey: appNavigatorKey,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? HomePageWidget() : LoginWidget(),
+          appStateNotifier.loggedIn ? HomePageWidget() : Auth2LoginWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? HomePageWidget() : LoginWidget(),
+              appStateNotifier.loggedIn ? HomePageWidget() : Auth2LoginWidget(),
         ),
         FFRoute(
           name: HomePageWidget.routeName,
@@ -93,20 +93,40 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => HomePageWidget(),
         ),
         FFRoute(
-          name: LoginWidget.routeName,
-          path: LoginWidget.routePath,
-          builder: (context, params) => LoginWidget(),
-        ),
-        FFRoute(
           name: EventReservationWidget.routeName,
           path: EventReservationWidget.routePath,
           requireAuth: true,
           builder: (context, params) => EventReservationWidget(),
         ),
         FFRoute(
-          name: CreateAccount2Widget.routeName,
-          path: CreateAccount2Widget.routePath,
-          builder: (context, params) => CreateAccount2Widget(),
+          name: Auth2CreateWidget.routeName,
+          path: Auth2CreateWidget.routePath,
+          builder: (context, params) => Auth2CreateWidget(),
+        ),
+        FFRoute(
+          name: Auth2LoginWidget.routeName,
+          path: Auth2LoginWidget.routePath,
+          builder: (context, params) => Auth2LoginWidget(),
+        ),
+        FFRoute(
+          name: Auth2ForgotPasswordWidget.routeName,
+          path: Auth2ForgotPasswordWidget.routePath,
+          builder: (context, params) => Auth2ForgotPasswordWidget(),
+        ),
+        FFRoute(
+          name: Auth2CreateProfileWidget.routeName,
+          path: Auth2CreateProfileWidget.routePath,
+          builder: (context, params) => Auth2CreateProfileWidget(),
+        ),
+        FFRoute(
+          name: Auth2ProfileWidget.routeName,
+          path: Auth2ProfileWidget.routePath,
+          builder: (context, params) => Auth2ProfileWidget(),
+        ),
+        FFRoute(
+          name: Auth2EditProfileWidget.routeName,
+          path: Auth2EditProfileWidget.routePath,
+          builder: (context, params) => Auth2EditProfileWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -279,7 +299,7 @@ class FFRoute {
 
           if (requireAuth && !appStateNotifier.loggedIn) {
             appStateNotifier.setRedirectLocationIfUnset(state.uri.toString());
-            return '/login';
+            return '/auth2Login';
           }
           return null;
         },

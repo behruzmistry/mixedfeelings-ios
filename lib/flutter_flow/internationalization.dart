@@ -215,74 +215,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ar': '',
     },
   },
-  // Login
-  {
-    'xay0ge2k': {
-      'en': 'Mixed Feelings',
-      'ar': '',
-    },
-    'iyv3a0hx': {
-      'en': 'Welcome',
-      'ar': '',
-    },
-    'q1lozfh3': {
-      'en': 'Let\'s get started by logging in',
-      'ar': '',
-    },
-    'sphlv1yn': {
-      'en': 'Email',
-      'ar': '',
-    },
-    'e1plc9ql': {
-      'en': 'Password',
-      'ar': '',
-    },
-    'd3p4ip5q': {
-      'en': 'Sign In',
-      'ar': '',
-    },
-    '8whdkb4o': {
-      'en': 'OR',
-      'ar': '',
-    },
-    'mwltwwar': {
-      'en': 'Continue with Google',
-      'ar': '',
-    },
-    'n87s8z91': {
-      'en': 'Continue with Apple',
-      'ar': '',
-    },
-    '0rt0o9fc': {
-      'en': 'Don\'t have an account? ',
-      'ar': '',
-    },
-    'fb2jjoia': {
-      'en': 'Sign Up here',
-      'ar': '',
-    },
-    '91jms8z0': {
-      'en': 'UserName',
-      'ar': '',
-    },
-    '91s27j7m': {
-      'en': 'Overall',
-      'ar': '',
-    },
-    '0e5ypsye': {
-      'en': '5',
-      'ar': '',
-    },
-    'rkb6c63i': {
-      'en':
-          'Nice outdoor courts, solid concrete and good hoops for the neighborhood.',
-      'ar': '',
-    },
-    'cubi3vpg': {
-      'en': 'Home',
-      'ar': '',
-    },
-  },
   // EventReservation
   {
     '0igss0wo': {
@@ -294,29 +226,64 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ar': '',
     },
   },
-  // CreateAccount2
+  // auth_2_Create
   {
-    'kcezdvv0': {
-      'en': 'Mixed Feelings',
+    'sht9uwx7': {
+      'en': 'Welcome',
       'ar': '',
     },
-    'q8x88jck': {
-      'en': 'Create an account',
+    'tw24gd8q': {
+      'en': 'Get started by creating an account using the form below.',
       'ar': '',
     },
-    'xe71cegy': {
-      'en': 'Let\'s get started by filling out the form below.',
+    'lqrhnnf7': {
+      'en': 'Email',
+      'ar': '',
+    },
+    '0i1i0lvh': {
+      'en': 'Password',
+      'ar': '',
+    },
+    'z926luj6': {
+      'en': 'Create Account',
+      'ar': '',
+    },
+    'i18emh3e': {
+      'en': 'Or sign up with',
+      'ar': '',
+    },
+    'q1oizl2u': {
+      'en': 'Continue with Google',
+      'ar': '',
+    },
+    'ex1dbrek': {
+      'en': 'Continue with Apple',
+      'ar': '',
+    },
+    '2mjukngq': {
+      'en': 'Already have an account? ',
+      'ar': '',
+    },
+    '9q3zxjzn': {
+      'en': 'Sign in here',
+      'ar': '',
+    },
+    'uglqffug': {
+      'en': 'Home',
+      'ar': '',
+    },
+  },
+  // auth_2_Login
+  {
+    'upt8a07t': {
+      'en': 'Welcome Back',
+      'ar': '',
+    },
+    'kb3j3jww': {
+      'en': 'Fill out the information below in order to access your account.',
       'ar': '',
     },
     '0s2nths3': {
-      'en': 'First Name',
-      'ar': '',
-    },
-    'eggdsc5g': {
-      'en': 'Last Name',
-      'ar': '',
-    },
-    'henf1602': {
       'en': 'Email',
       'ar': '',
     },
@@ -324,41 +291,160 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Password',
       'ar': '',
     },
-    'dwvlj8rl': {
-      'en': 'Confirm Password',
+    'gq5vsbc6': {
+      'en': 'Sign In',
       'ar': '',
     },
-    '7uqyhzie': {
+    'en9mydfc': {
+      'en': 'Or sign in with',
+      'ar': '',
+    },
+    '5h1gg4sy': {
+      'en': 'Continue with Google',
+      'ar': '',
+    },
+    'hiauoi9l': {
+      'en': 'Continue with Apple',
+      'ar': '',
+    },
+    'ta8vp1j1': {
+      'en': 'Don\'t have an account?  ',
+      'ar': '',
+    },
+    '63vdg6zq': {
       'en': 'Create Account',
       'ar': '',
     },
-    'tg0dl21y': {
-      'en': 'Already have an account? ',
+    'hg8e7zdg': {
+      'en': 'Forgot password?',
       'ar': '',
     },
-    '461tt8rz': {
-      'en': ' Sign In here',
-      'ar': '',
-    },
-    'rtyg20jh': {
-      'en': 'UserName',
-      'ar': '',
-    },
-    'wf637hx8': {
-      'en': 'Overall',
-      'ar': '',
-    },
-    'bohkyx3l': {
-      'en': '5',
-      'ar': '',
-    },
-    'gv0mdsac': {
-      'en':
-          'Nice outdoor courts, solid concrete and good hoops for the neighborhood.',
-      'ar': '',
-    },
-    'uglqffug': {
+    'kjhbi5sw': {
       'en': 'Home',
+      'ar': '',
+    },
+  },
+  // auth_2_ForgotPassword
+  {
+    'l3hdefps': {
+      'en': 'Forgot Password',
+      'ar': '',
+    },
+    '8cue2mac': {
+      'en':
+          'Please fill out your email belo in order to recieve a reset password link.',
+      'ar': '',
+    },
+    'umvif78k': {
+      'en': 'Email',
+      'ar': '',
+    },
+    't0u263td': {
+      'en': 'Send Reset Link',
+      'ar': '',
+    },
+    't0f8y9n3': {
+      'en': 'Home',
+      'ar': '',
+    },
+  },
+  // auth_2_createProfile
+  {
+    'usa6o3fl': {
+      'en': 'Home',
+      'ar': '',
+    },
+  },
+  // auth_2_Profile
+  {
+    'v30actt1': {
+      'en': 'Your Account',
+      'ar': '',
+    },
+    'mummkci3': {
+      'en': 'Edit Profile',
+      'ar': '',
+    },
+    'sxorn7mt': {
+      'en': 'App Settings',
+      'ar': '',
+    },
+    'evyq0mf5': {
+      'en': 'Support',
+      'ar': '',
+    },
+    '5u7n0bwy': {
+      'en': 'Terms of Service',
+      'ar': '',
+    },
+    'g6kmphlf': {
+      'en': 'Log Out',
+      'ar': '',
+    },
+    'g8j00a5w': {
+      'en': 'Home',
+      'ar': '',
+    },
+  },
+  // auth_2_EditProfile
+  {
+    'iuvpacsk': {
+      'en': 'Home',
+      'ar': '',
+    },
+  },
+  // editProfile_auth_2
+  {
+    'xsard4hl': {
+      'en': 'Adjust the content below to update your profile.',
+      'ar': '',
+    },
+    '6nka246g': {
+      'en': 'Change Photo',
+      'ar': '',
+    },
+    'y5424z0p': {
+      'en': 'Full Name',
+      'ar': '',
+    },
+    't0zjvnbh': {
+      'en': 'Your full name...',
+      'ar': '',
+    },
+    'uo7dys9g': {
+      'en': 'Your Role',
+      'ar': '',
+    },
+    '3n3y8jrq': {
+      'en': 'Search for an item...',
+      'ar': '',
+    },
+    'dkwneq80': {
+      'en': 'Owner/Founder',
+      'ar': '',
+    },
+    'yshe5w0s': {
+      'en': 'Director',
+      'ar': '',
+    },
+    '1avnf1oz': {
+      'en': 'Manager',
+      'ar': '',
+    },
+    'la4xqiem': {
+      'en': 'Mid-Manager',
+      'ar': '',
+    },
+    'tkkxz3g2': {
+      'en': 'Employee',
+      'ar': '',
+    },
+    '20bp6ceh': {
+      'en': 'Short Description',
+      'ar': '',
+    },
+    'r41wv5zw': {
+      'en': 'A little about you...',
       'ar': '',
     },
   },
