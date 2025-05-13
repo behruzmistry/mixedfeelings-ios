@@ -5,6 +5,9 @@ on:
     branches: [ "flutterflow" ]
   pull_request:
     branches: [ "flutterflow" ]
+  schedule:
+    - cron: '0 0 * * *' # Daily at midnight UTC
+  workflow_dispatch:
 
 jobs:
   build:
@@ -13,7 +16,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Use the Flutter action to set up Flutter SDK instead of Dart SDK
+      - uses: actions/cache@v3
+        with:
+          path: |
+            ~/.pub-cache
+            build
+          key: ${{ runner.os }}-flutter-${{ hashFiles('pubspec.yaml') }}
+          restore-keys: ${{ runner.os }}-flutter-
+
       - uses: subosito/flutter-action@v2
         with:
           flutter-version: 'stable'
@@ -24,5 +34,20 @@ jobs:
       - name: Analyze project source
         run: flutter analyze
 
-      - name: Run tests
-        run: flutter test 
+      - name: Run lint checks
+        run: flutter pub run dart_code_metrics:metrics analyze .
+
+      - name: Run unit tests
+        run: flutter test test/unit
+
+      - name: Run widget tests
+        run: flutter test test/widget
+
+      - name: Build APK
+        run: flutter build apk
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v3
+        with:
+          name: app-release.apk
+          path: build/app/outputs/flutter-apk/app-release.apk
